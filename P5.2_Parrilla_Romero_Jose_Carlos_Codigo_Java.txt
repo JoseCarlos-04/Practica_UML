@@ -1,0 +1,73 @@
+public class Actor {
+	private String nif;
+	private String nombre;
+	private String apellidos;
+	private int edad;
+	private String telefono;
+	private String correo_electronico;
+	private String imagen;
+
+	public Actor() {
+	}
+}
+
+--------------------------------------------------------------------
+
+public class Admin {
+	public Admin() {
+	}
+}
+
+--------------------------------------------------------------------
+
+public class Medico {
+	private String especialidad;
+
+	public Medico() {
+	}
+}
+
+--------------------------------------------------------------------
+
+public class Usuario {
+	public Usuario() {
+	}
+}
+
+--------------------------------------------------------------------
+
+public class Receta {
+	private String id;
+	private String nombre_medicamento;
+	private int cantidad;
+	private List<Medico> listaMedicos;	
+
+	public Receta() {
+	}
+}
+
+--------------------------------------------------------------------
+
+public class Solicita {
+	private Date momento;
+	private int prioridad;
+	private String comentario;
+	private Usuario usuario;	
+
+	public Solicita() {
+	}
+}
+
+--------------------------------------------------------------------
+
+public class Cita {
+	private String id;
+	private int duracion_estimada;
+	private Date fecha;
+	private List<Usuario> listaUsuarios;
+	private List<Medico> listaMedicos;
+	private List<Receta> listaRecetas;
+
+	public Cita() {
+	}
+}
